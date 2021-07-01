@@ -1,6 +1,6 @@
 @charset "UTF-8";
-html .font-hannari {
-  font-family: "Hannari";
+html .font-noto {
+  font-family: "Noto Serif JP", serif;
   color: #7D6950;
   font-feature-settings: "palt";
 }
@@ -30,7 +30,6 @@ header .top {
 }
 header .top img {
   height: 90%;
-  width: 90%;
   position: absolute;
   left: 0;
   right: 0;
@@ -77,14 +76,13 @@ main {
 }
 
 .Tab-item, .Link-item {
-  margin: 0 20px 0 2%;
+  margin: 0 13px 0 2%;
   height: 50px;
   line-height: 50px;
   font-size: 20px;
   text-align: center;
   color: #7D6950;
   float: right;
-  transition: all 0.5s ease;
 }
 .Tab-item:hover, .Link-item:hover {
   opacity: 50%;
@@ -161,9 +159,6 @@ main {
   color: #E15037;
   font-weight: bold;
 }
-.tabs input:checked + .tab-item:hover {
-  opacity: 1;
-}
 
 input[name=tab-item], input[name=Tab-item] {
   display: none;
@@ -189,8 +184,9 @@ input[name=tab-item], input[name=Tab-item] {
   flex-wrap: wrap;
 }
 .works-container .item {
-  line-height: 25px;
+  line-height: 27px;
   font-size: 18px;
+  letter-spacing: 0.05em;
   margin: 10px 0;
   width: 100%;
   height: 150px;
@@ -217,6 +213,7 @@ input[name=tab-item], input[name=Tab-item] {
   position: relative;
 }
 .il01 p {
+  padding: 9px 10px 5px 10px;
   position: absolute;
   color: #fff;
   top: 25px;
@@ -226,12 +223,6 @@ input[name=tab-item], input[name=Tab-item] {
 .il02 {
   position: relative;
   border: 1px solid #ebe7e1;
-}
-.il02 p {
-  position: absolute;
-  color: #fff;
-  top: 25px;
-  left: 25px;
 }
 
 #sqil03 {
@@ -245,6 +236,7 @@ input[name=tab-item], input[name=Tab-item] {
   position: relative;
 }
 .il03 p {
+  padding: 9px 10px 5px 10px;
   position: absolute;
   color: #fff;
   top: 25px;
@@ -258,10 +250,11 @@ input[name=tab-item], input[name=Tab-item] {
 .il04 p {
   position: absolute;
   color: #000;
+  font-size: 16px;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 9px 10px 5px 10px;
   bottom: 25px;
-  right: 25px;
+  left: 25px;
 }
 
 .profile-container {
