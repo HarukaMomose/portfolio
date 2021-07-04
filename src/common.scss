@@ -77,32 +77,33 @@ main{
 .container{
     position: absolute;
     top : 740px;
-    padding : 0 $sidepadding 0 10px;
+    padding : 0 $sidepadding 40px $sidepadding;
+    width:100%;
+    max-width: 1300px;
+    left:50%;
+    transform: translateX(-50%);
     font-size       : 20px;
     input:checked + .Tab-item {
         color:$acolor;
         font-weight: bold;
         border-bottom: 1px solid $acolor;
     }
-    width:100%;
-    margin-top: 50px;
-    padding-bottom: 40px;
-    margin: 0;
 }
 .Tab-item, .Link-item{  //領域切り替え用タブのデザイン
-    margin:0 13px 0 $sidepadding;
+    margin:0 10px 0 $sidepadding;
     height: 50px;
     line-height: 50px;
     font-size: 20px;
     text-align: center;
-    color: $subcolor;
     float: right;
     //transition: all 0.5s ease;　なんかボーダーの表示気持ち悪くなるのなんで
     &:hover{
         opacity: 50%;
     }
-
   }
+.Link-item{
+    margin-right: $sidepadding*3;
+}
 .file{
     display: none;
 }
@@ -265,23 +266,76 @@ input[name="tab-item"], input[name="Tab-item"]{
 }
 
 //----------------------------------------------------PROFILEのコンテンツ
+
 .profile-container{
-    position: absolute;
+    position: relative;
     width: 80%;
-    left:50%;
+    min-width: 800px;
+    height:370px;
+    padding: 0px $sidepadding*4;
+    margin-top: 100px;
+    left: 50%;
     transform: translateX(-50%);
-    img{
+    font-size:15px;
+    #snap{
+        position: relative;
+        text-align: center;
         float:left;
-        height:300px;
-        width:300px;
-        border: 1px solid $maincolor;
-        margin: 0 50px 0 0;
+        width:200px;
+        height:350px;
+        margin-right: 50px;
+        img{
+            display: block;
+            height:200px;
+            margin-top: 5px;
+            border: 1px solid $maincolor;
+        }
+        h2{
+            margin-top:30px;
+            font-size:20px;
+            line-height: 30px;
+            span{
+                display: block;
+                font-size:16px;
+            }
+        }
+        p{
+            font-size: 14px;
+            position:absolute;
+            bottom:0;
+            left:50%;
+            transform: translateX(-50%);
+        }
     }
-    p{
-        font-size:18px;
-        color:$maincolor;
-        line-height:24px;
+    #intro{
+        line-height:26px;
     }
+    #elem{
+        float:right;
+        width:380px;
+        display: block;
+        bottom:0;
+        text-align: right;
+        font-size:14px;
+        position:absolute;
+        bottom:0;
+        right:$sidepadding*4;
+        padding:10px;
+        h4{
+            font-size:16px;
+            line-height: 30px;
+            padding:10px;
+            margin:3px;
+        }
+        p{
+            float:right;
+            padding:10px;
+            margin:3px;
+            border-radius: 15px;
+            background-color: lighten($subcolor, 55%);
+        }
+    }
+
 }
 
 

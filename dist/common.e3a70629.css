@@ -62,12 +62,12 @@ main {
 .container {
   position: absolute;
   top: 740px;
-  padding: 0 2% 0 10px;
-  font-size: 20px;
+  padding: 0 2% 40px 2%;
   width: 100%;
-  margin-top: 50px;
-  padding-bottom: 40px;
-  margin: 0;
+  max-width: 1300px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
 }
 .container input:checked + .Tab-item {
   color: #E15037;
@@ -76,16 +76,19 @@ main {
 }
 
 .Tab-item, .Link-item {
-  margin: 0 13px 0 2%;
+  margin: 0 10px 0 2%;
   height: 50px;
   line-height: 50px;
   font-size: 20px;
   text-align: center;
-  color: #7D6950;
   float: right;
 }
 .Tab-item:hover, .Link-item:hover {
   opacity: 50%;
+}
+
+.Link-item {
+  margin-right: 6%;
 }
 
 .file {
@@ -258,22 +261,73 @@ input[name=tab-item], input[name=Tab-item] {
 }
 
 .profile-container {
-  position: absolute;
+  position: relative;
   width: 80%;
+  min-width: 800px;
+  height: 370px;
+  padding: 0px 8%;
+  margin-top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 15px;
+}
+.profile-container #snap {
+  position: relative;
+  text-align: center;
+  float: left;
+  width: 200px;
+  height: 350px;
+  margin-right: 50px;
+}
+.profile-container #snap img {
+  display: block;
+  height: 200px;
+  margin-top: 5px;
+  border: 1px solid #53493d;
+}
+.profile-container #snap h2 {
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 30px;
+}
+.profile-container #snap h2 span {
+  display: block;
+  font-size: 16px;
+}
+.profile-container #snap p {
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }
-.profile-container img {
-  float: left;
-  height: 300px;
-  width: 300px;
-  border: 1px solid #53493d;
-  margin: 0 50px 0 0;
+.profile-container #intro {
+  line-height: 26px;
 }
-.profile-container p {
-  font-size: 18px;
-  color: #53493d;
-  line-height: 24px;
+.profile-container #elem {
+  float: right;
+  width: 380px;
+  display: block;
+  bottom: 0;
+  text-align: right;
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  right: 8%;
+  padding: 10px;
+}
+.profile-container #elem h4 {
+  font-size: 16px;
+  line-height: 30px;
+  padding: 10px;
+  margin: 3px;
+}
+.profile-container #elem p {
+  float: right;
+  padding: 10px;
+  margin: 3px;
+  border-radius: 15px;
+  background-color: #f5f3f0;
 }
 
 /*--------------------------------------------------------------------------------Footer*/
