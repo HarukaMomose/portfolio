@@ -1,0 +1,132 @@
+@charset "utf-8";
+//共通部分、一個のscssにしなさいよ
+
+$maincolor      : #53493d;
+$subcolor       : #7D6950;
+$acolor         : #E15037 ;
+$sidepadding    : 2%;
+$max-width      : 1300px;
+
+html{
+    .font-noto {
+        font-family: "Noto Serif JP", serif; 
+        color: $subcolor;
+        font-feature-settings: "palt";
+    }
+    .font-amiri{
+        font-family: 'Amiri', serif;
+        color: $subcolor;
+        font-feature-settings: "palt";
+    }
+    .cb{
+        clear:both;
+    }
+    a{
+        text-decoration : none;
+        &:link, &:visited, &:hover, &:active{
+            color : $subcolor;	
+        }
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+}
+
+/*--------------------------------------------------------------------------------Footer*/
+footer{
+    background-color: lighten($maincolor, 50%);
+    height: 150px;
+    text-align: center;
+    small p{
+        padding: 100px 0 50px 0;
+        color : #fff;
+        line-height : 20px;
+    }
+
+}
+//-----------------------------------------------------------------------------------
+//ここから上はメインからのコピペ部分　こんどちゃんとファイル分ける
+//-----------------------------------------------------------------------------------
+
+header{
+    img{
+        width:50px;
+        height:50px;
+        margin: 30px 0 0 $sidepadding;
+    }
+}
+nav{
+    float:right;
+    margin:30px $sidepadding 0 0;
+    width:300px;
+    ul{
+        .current{
+            color:$acolor;
+            font-weight: bold;
+            border-bottom: 1px solid $acolor;
+        }
+        li{
+            margin:0 10px 0 $sidepadding;
+            line-height: 50px;
+            font-size: 16px;
+            text-align: center;
+            float: right;
+            &:hover{
+                opacity: 50%;
+            }
+        }
+    }
+}
+main{
+    position: relative;
+    width:100%;
+    h1{
+        text-align      : left;
+        font-weight     : normal;
+        font-size       : 30px ;
+        margin          : 60px auto 60px $sidepadding*2;
+        img{
+            margin: 0 -8px -10px 0 ;
+        }
+    }
+}
+aside{
+    color:$maincolor;
+    position: absolute;
+    width:10%;
+    text-align: center;
+    right:$sidepadding*2;
+    top:30px;
+    p{
+        line-height: 35px;
+    }
+    .year{
+        font-size:18px;
+    }
+}
+article{
+    width:75%;
+    margin: 0 $sidepadding*4 0 $sidepadding*4;
+    position: relative;
+    h3{
+        color:$maincolor;
+        float: right;
+        font-size: 14px;
+    }
+    p{
+        position:absolute;
+        background-color: rgba(0,0,0,0.4);
+        color:#fff;
+        padding:10px;
+        line-height: 28px;
+        font-size: 16px;
+        bottom:40px;
+        left:-20px
+    }
+
+    img{
+        margin-bottom:80px;
+        width:100%;
+        max-width: 1300px;
+    }
+}

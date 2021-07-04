@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+    <meta charset="UTF-8">
     <title>HARUKA MOMOSE | BLOG</title>
-
+    <link rel = "stylesheet" href = "./src/destyle.css">
+    <link rel = "stylesheet" href = "./blog/src/blog.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
 </head>
+<!--ここからヘッダー　トップへのリンクはタブごとにも行けるようにしたい-->
+<header>
+    <!--ここのロゴ新しくつくる-->
+    <a href="./index.html"><img src="./images/suguri.png" alt="トップへ"></a>
+    <nav class="font-amiri">
+        <ul>
+            <li class="current">BLOG</li>
+            <li><a href="">CONTACT</a></li>
+            <li>PROFILE</li>
+            <li>WORKS</li>
+        </ul>
+    </nav>
+</header>
+<!--ヘッダーここまで-->
 
 <main>
-    ai
+<div class="contents">
+    <aside class="font-amiri">
+        <p class="year">2021</p>
+        <p class="month">7</p>
+        <p class="month">6</p>
+        <p class="month">5</p>
+    </aside>
+
+    <h1 class="font-amiri"><img src="./images/ashirai1.png">BLOG</h1>
+    <div class="article-area">
+        <article class="font-noto" id="20210704">
+            <h3>2021/07/04</h3>
+            <p>県立長野美術館<br>ここにくる日いつも雨な気がする。</p>
+            <div class="shadow"></div>
+            <img src="./blog/images/202107/20210704.jpg" alt="美術館の写真">
+        </article>
+        <article class="font-noto" id="20210702">
+            <h3>2021/07/02</h3>
+            <p class="rt">山がきれい。<br>ずっと湿度が高くて洗濯物がかわかない。</p>
+            <div class="shadow"></div>
+            <img src="./blog/images/202107/20210702.jpg" alt="山の写真">
+        </article>
+        <article class="font-noto" id="20210701">
+            <h3>2021/07/01</h3>
+            <p>あじさいの花盛りはあと少しかな。<br>もこもこしてて良い。</p>
+            <div class="shadow"></div>
+            <img src="./blog/images/202107/20210701.jpg" alt="花の写真">
+        </article>
+        <article class="font-noto" id="20210620">
+            <h3>2021/06/20</h3>
+            <p class="rt">学校で写真の授業を受けています。<br>理論が色々あって、だんだんと思い通りに撮れるようになるのが楽しい。</p>
+            <div class="shadow"></div>
+            <img src="./blog/images/202107/20210620.jpg" alt="山の写真">
+        </article>
+        </div>
+</div>
 </main>
 
+<footer>
+    <small><p>COPY RIGHTS © 2021 HARUKA MOMOSE All rights reserved.</p></small>
+</footer>
 </html>
