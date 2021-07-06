@@ -1,0 +1,118 @@
+html .font-noto {
+  font-family: "Noto Serif JP", serif;
+  color: #7D6950;
+  font-feature-settings: "palt";
+}
+html .font-amiri {
+  font-family: "Amiri", serif;
+  color: #7D6950;
+  font-feature-settings: "palt";
+}
+html .cb {
+  clear: both;
+}
+html a {
+  text-decoration: none;
+}
+html a:link, html a:visited, html a:hover, html a:active {
+  color: #7D6950;
+}
+html a:hover {
+  opacity: 0.6;
+}
+
+/*--------------------------------------------------------------------------------Footer*/
+footer {
+  background-color: #d0c8bf;
+  height: 150px;
+  text-align: center;
+}
+footer small p {
+  padding: 100px 0 50px 0;
+  color: #fff;
+  line-height: 20px;
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+  margin: 30px 0 0 2%;
+}
+
+nav {
+  float: right;
+  margin: 30px 2% 0 0;
+  width: 300px;
+}
+nav ul .current {
+  color: #E15037;
+  font-weight: bold;
+  border-bottom: 1px solid #E15037;
+}
+nav ul li {
+  margin: 0 10px 0 2%;
+  line-height: 50px;
+  font-size: 16px;
+  text-align: center;
+  float: right;
+}
+nav ul li:hover {
+  opacity: 50%;
+}
+
+main {
+  position: relative;
+  width: 100%;
+}
+main h1 {
+  letter-spacing: 0.05em;
+  text-align: left;
+  font-weight: normal;
+  font-size: 30px;
+  margin: 60px auto 60px 4%;
+}
+main h1 img {
+  margin: 0 -8px -10px 0;
+}
+
+aside {
+  color: #53493d;
+  position: absolute;
+  width: 10%;
+  text-align: center;
+  right: 4%;
+  top: 30px;
+}
+aside p {
+  line-height: 35px;
+}
+aside .year {
+  font-size: 18px;
+}
+
+article {
+  width: 75%;
+  margin: 0 8% 0 8%;
+  position: relative;
+}
+article h3 {
+  color: #53493d;
+  float: right;
+  font-size: 14px;
+}
+article p {
+  position: absolute;
+  color: #53493d;
+  padding: 10px;
+  line-height: 28px;
+  font-size: 18px;
+  bottom: 40px;
+  left: -20px;
+}
+article img {
+  margin-bottom: 80px;
+  width: 100%;
+  max-width: 1300px;
+}
+
+/*# sourceMappingURL=/blog.3cef94f6.css.map */

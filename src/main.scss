@@ -137,8 +137,8 @@ main{
     position:absolute;
     margin: 20px 50% 0 50%;
     transform:translateX(-50%);
-    background-color: $acolor;
-    color:#fff;
+    border:1px solid #E15037;
+    color: $acolor;
     padding:10px 15px;
     font-size:16px;
     border-radius: 20px;
@@ -272,7 +272,7 @@ input[name="tab-item"], input[name="Tab-item"]{
     width: 80%;
     min-width: 800px;
     height:370px;
-    padding: 0px $sidepadding*4;
+    padding: 0px $sidepadding*4 0 $sidepadding*5;
     margin-top: 100px;
     left: 50%;
     transform: translateX(-50%);
@@ -328,7 +328,8 @@ input[name="tab-item"], input[name="Tab-item"]{
     }
 
 }
-
+.contact-container{
+}
 
 /*--------------------------------------------------------------------------------Footer*/
 footer{
