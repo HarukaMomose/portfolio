@@ -110,6 +110,7 @@ article p {
   left: -20px;
 }
 article img {
+  border-radius: 5px;
   margin-bottom: 80px;
   width: 100%;
   max-width: 1300px;

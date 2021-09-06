@@ -22,32 +22,34 @@ html a:hover {
   opacity: 0.6;
 }
 
-header .top {
+.top {
   position: relative;
   margin-top: 100px;
   height: 600px;
-  text-align: center;
 }
-header .top img {
+.top img {
   height: 90%;
   position: absolute;
-  left: 0;
-  right: 0;
   margin: auto;
+  top: 0%;
+  right: 50%;
+  transform: translateX(50%);
 }
-header .top h1 {
+.top h1 {
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 224px;
-  margin: auto;
+  top: 38%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
   font-weight: bold;
   color: #E15037;
   font-size: 27px;
   letter-spacing: 0.19em;
-  line-height: 3em;
+  line-height: 2em;
+  padding: 20px 0;
 }
-header .top h1 span {
+.top h1 span {
   line-height: 1.2em;
   display: block;
   font-weight: lighter;
@@ -55,14 +57,9 @@ header .top h1 span {
   letter-spacing: 0.02em;
 }
 
-main {
-  min-height: 1300px;
-}
-
 .container {
   position: absolute;
   top: 740px;
-  padding: 0 2% 40px 2%;
   width: 100%;
   max-width: 1300px;
   left: 50%;
@@ -101,14 +98,18 @@ main {
   display: block;
 }
 
-.main-area h1 {
+.main-area {
+  min-height: 2200px;
+}
+.main-area .cate {
   text-align: left;
   font-weight: normal;
-  font-size: 30px;
-  margin: 60px auto 60px 4%;
+  font-size: 27px;
+  margin: 100px auto 30px 2%;
 }
-.main-area h1 img {
-  margin: 0 -8px -10px 0;
+.main-area .cate img {
+  margin: 0 -8px -6px 2%;
+  height: 75px;
 }
 
 #letter-space-1 {
@@ -123,7 +124,7 @@ main {
   letter-spacing: 0.05em;
 }
 
-#more {
+#Instagram {
   position: absolute;
   margin: 20px 50% 0 50%;
   transform: translateX(-50%);
@@ -136,7 +137,7 @@ main {
 
 /*--------------------------------------------------------------------------------WORKS*/
 .tabs {
-  width: 90%;
+  width: 84%;
   max-width: 1300px;
   margin: 0 auto;
 }
@@ -144,17 +145,17 @@ main {
 .tab-item {
   width: calc(100%/3);
   height: 50px;
-  border: 0px solid #E15037;
   border-bottom: 2px solid #E15037;
-  line-height: 50px;
   font-size: 20px;
   text-align: center;
   color: #7D6950;
-  display: block;
   float: left;
 }
 .tab-item:hover {
   opacity: 0.5;
+}
+.tab-item p {
+  line-height: 50px;
 }
 
 .tabs input:checked + .tab-item {
@@ -174,7 +175,7 @@ input[name=tab-item], input[name=Tab-item] {
   overflow: hidden;
 }
 
-#Illustration:checked ~ #illustration,
+#Other:checked ~ #other,
 #Graphic-Design:checked ~ #graphic-design,
 #Web-Design:checked ~ #web-design {
   display: block;
@@ -196,7 +197,7 @@ input[name=tab-item], input[name=Tab-item] {
   border-radius: 10px;
   overflow: hidden;
   /****確認用****/
-  background-color: #d0c8bf;
+  background-color: #fff;
   /****ここまで****/
 }
 .works-container .square {
@@ -205,6 +206,17 @@ input[name=tab-item], input[name=Tab-item] {
   height: 400px;
   background-color: #000;
   opacity: 50%;
+}
+
+.lead h2 {
+  margin: 90px 0 0 6%;
+  font-size: 25px;
+}
+.lead p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 28px;
+  margin: 20px 8% 0 8%;
 }
 
 #sqil01 {
@@ -216,10 +228,11 @@ input[name=tab-item], input[name=Tab-item] {
   position: relative;
 }
 .il01 p {
-  padding: 9px 10px 5px 10px;
+  padding: 5px 10px 5px 10px;
   position: absolute;
   color: #fff;
-  top: 25px;
+  bottom: 50%;
+  transform: translateY(50%);
   left: 25px;
 }
 
@@ -239,10 +252,11 @@ input[name=tab-item], input[name=Tab-item] {
   position: relative;
 }
 .il03 p {
-  padding: 9px 10px 5px 10px;
+  padding: 5px 10px 5px 10px;
   position: absolute;
   color: #fff;
-  top: 25px;
+  bottom: 50%;
+  transform: translateY(50%);
   left: 25px;
 }
 
@@ -255,8 +269,9 @@ input[name=tab-item], input[name=Tab-item] {
   color: #000;
   font-size: 16px;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 9px 10px 5px 10px;
-  bottom: 25px;
+  padding: 5px 10px 5px 10px;
+  bottom: 50%;
+  transform: translateY(50%);
   left: 25px;
 }
 
@@ -265,10 +280,10 @@ input[name=tab-item], input[name=Tab-item] {
   width: 80%;
   min-width: 800px;
   height: 370px;
-  padding: 0px 8% 0 10%;
-  margin-top: 100px;
+  padding: 0px 8% 0 8%;
+  margin: 100px 0 0 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-45%);
   font-size: 15px;
 }
 .profile-container #snap {
@@ -283,28 +298,28 @@ input[name=tab-item], input[name=Tab-item] {
   display: block;
   height: 200px;
   margin-top: 5px;
-  border: 1px solid #53493d;
 }
 .profile-container #snap h2 {
   margin-top: 40px;
   font-size: 20px;
   line-height: 30px;
+  letter-spacing: 0.2em;
 }
 .profile-container #snap h2 span {
   display: block;
   font-size: 16px;
+  letter-spacing: 0.2em;
 }
 .profile-container #intro {
   line-height: 26px;
 }
 .profile-container #elem {
-  margin: -15px 3px 0 0;
-  float: right;
-  width: 350px;
+  margin: 8px 3px 0 0;
+  float: left;
+  width: 500px;
   display: block;
-  text-align: right;
+  text-align: left;
   font-size: 14px;
-  right: 8%;
 }
 .profile-container #elem h4 {
   font-size: 16px;
@@ -313,11 +328,21 @@ input[name=tab-item], input[name=Tab-item] {
   margin: 3px;
 }
 .profile-container #elem p {
-  float: right;
+  float: left;
   padding: 10px;
   margin: 3px;
   border-radius: 15px;
   background-color: #f5f3f0;
+}
+
+#mail {
+  margin: 100px 0 0 0;
+  text-align: center;
+}
+#mail img {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
 }
 
 /*--------------------------------------------------------------------------------Footer*/
